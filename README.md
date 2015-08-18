@@ -6,7 +6,7 @@ However, individual objects in object oriented Ruby *can interact with one anoth
 
 ## Code Along I: Objects as Arguments
 
-Let's stick with our `Person` class example and give our individual people instances an opportunity to interact in a very human way––they're going to `go_on_a_date`. We'll build an instance method, `go_on_date` that takes in another person as an arguments. If those people are a good match, both people will become happier. In order to measure someone's happiness level, we'll give them a setter and getter `happiness` method and score their happiness on a scale of 1 to 10. 
+Let's stick with our `Person` class example and give our individual people instances an opportunity to interact in a very human way––they're going to `go_on_a_date`. We'll build an instance method, `go_on_a_date` that takes in another person as an arguments. If those people are a good match, both people will become happier. In order to measure someone's happiness level, we'll give them a setter and getter `happiness` method and score their happiness on a scale of 1 to 10. 
 
 * In `lib/person.rb`, define a `Person` class. Our people should initialize with a name and, since they feel pretty neutral on initialization, they should be initialized with a happiness level of `5`. 
 * Give your `Person` class an `attr_accessor` for `name` and `happiness`. 
