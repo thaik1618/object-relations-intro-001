@@ -6,10 +6,10 @@ However, individual objects in object oriented Ruby *can interact with one anoth
 
 ## Code Along I: Objects as Arguments
 
-Let's stick with our Person class example and give our individual people instances an opportunity to interact in a very human way––they're going to `go_on_a_date`. We'll build an instance method, `go_on_date` that takes in another person as an arguments. If those people are a good match, both people will become happier. In order to measure someone's happiness level, we'll give them a setter and getter `happiness` method and score their happiness on a scale of 1 to 10. 
+Let's stick with our `Person` class example and give our individual people instances an opportunity to interact in a very human way––they're going to `go_on_a_date`. We'll build an instance method, `go_on_date` that takes in another person as an arguments. If those people are a good match, both people will become happier. In order to measure someone's happiness level, we'll give them a setter and getter `happiness` method and score their happiness on a scale of 1 to 10. 
 
-* In `lib/person.rb`, define a Person class. Our people should initialize with a name and, since they feel pretty neutral on initialization, they should be initialized with a happiness level of `5`. 
-* Give your Person class an `attr_accessor` for `name` and `happiness`. 
+* In `lib/person.rb`, define a `Person` class. Our people should initialize with a name and, since they feel pretty neutral on initialization, they should be initialized with a happiness level of `5`. 
+* Give your `Person` class an `attr_accessor` for `name` and `happiness`. 
 
 ```ruby
 class Person
@@ -22,7 +22,7 @@ class Person
   end
 ``` 
 
-* Next, we need to build our `go_on_a_date` method. It should take in *another instance of person* and the value of `true` or `false`, depending on whether or not our two people instances are a good romantic match: 
+* Next, we need to build our `go_on_a_date` method. It should take in *another instance of `Person`* and the value of `true` or `false`, depending on whether or not our two people instances are a good romantic match: 
 
 ```ruby
 class Person
@@ -86,13 +86,13 @@ class Person
   end
 ```
 
-And that's it! We've build a way for individual instances of Person class to interact and, through doing so, change their respective attributes. Try out the code in `lib/person.rb`. If you have the tests passing, un-comment out the lines at the bottom of the file and run `ruby person.rb` in your terminal, inside the directory of this lab. You should see that we've successfully interacted our people instances and changed each of their happiness levels as a result. 
+And that's it! We've build a way for individual instances of `Perso`n class to interact and, through doing so, change their respective attributes. Try out the code in `lib/person.rb`. If you have the tests passing, un-comment out the lines at the bottom of the file and run `ruby person.rb` in your terminal, inside the directory of this lab. You should see that we've successfully interacted our people instances and changed each of their happiness levels as a result. 
 
 ## Code Along II: Associating Objects
 
-Let's take a look at the second manner in which instances of a class can interact: associating objects to one another. We'll stick with our Person class and say that Beyonce and Jay-Z had such a great date that they've decided to get married. The consequence of getting married is that Beyonce's "partner" will be Jay-Z and Jay-Z's "partner" will be Beyonce. 
+Let's take a look at the second manner in which instances of a class can interact: associating objects to one another. We'll stick with our `Person` class and say that Beyonce and Jay-Z had such a great date that they've decided to get married. The consequence of getting married is that Beyonce's "partner" will be Jay-Z and Jay-Z's "partner" will be Beyonce. 
 
-* First, let's create an attr_accessor for `partner` so that we can eventually tell our two instances of Person class that they are each other's partner. 
+* First, let's create an attr_accessor for `partner` so that we can eventually tell our two instances of `Person` class that they are each other's partner. 
 
 ```ruby
 class Person
