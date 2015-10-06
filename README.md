@@ -86,7 +86,7 @@ class Person
   end
 ```
 
-And that's it! We've build a way for individual instances of `Perso`n class to interact and, through doing so, change their respective attributes. Try out the code in `lib/person.rb`. If you have the tests passing, un-comment out the lines at the bottom of the file and run `ruby person.rb` in your terminal, inside the directory of this lab. You should see that we've successfully interacted our people instances and changed each of their happiness levels as a result. 
+And that's it! We've build a way for individual instances of `Person` class to interact and, through doing so, change their respective attributes. Try out the code in `lib/person.rb`. If you have the tests passing, un-comment out the lines at the bottom of the file and run `ruby person.rb` in your terminal, inside the directory of this lab. You should see that we've successfully interacted our people instances and changed each of their happiness levels as a result. 
 
 ## Code Along II: Associating Objects
 
